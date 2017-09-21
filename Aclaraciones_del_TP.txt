@@ -1,0 +1,39 @@
+Alumno: Ariel Martin (solo)
+DNI: 28504696
+
+1-Montar el entorno java y subir un proyecto en común en github. Enviar el link para mirar los commits en github.
+
+Hecho
+
+2-Hacer con junit un test que busque todas las farmacias de turno los dias mastes.
+
+El test se encuentra en la ruta:
+\proyecto-limpio-spring\src\test\java\ar\edu\unlam\tallerweb1\DeTurnoTest
+
+3-Hacer con junit un test que busque todas las farmacias de una calle.
+
+El test se encuentra en la ruta:
+\proyecto-limpio-spring\src\test\java\ar\edu\unlam\tallerweb1\DeLaCalle
+
+4-Hacer con junit un test que busque todas las farmacias de un barrio.
+
+El test se encuentra en la ruta:
+\proyecto-limpio-spring\src\test\java\ar\edu\unlam\tallerweb1\DeUnBarrio
+
+5-Usando path variables, hacer un action que reciba una operación y sus dos operandos y que lleve a una vista que muestra la siguiente frase “El resultado de sumar 3 y 6 da 9”. En caso que no pueda realizarse la operación se debe llevar a otra vista diferente donde se muestra un mensaje descriptivo.
+
+El controller se encuentra en la ruta:
+\proyecto-limpio-spring\src\main\java\ar\edu\unlam\tallerweb1\controladores\ControladorCalculadora
+
+aplica los path estaticos :
+\ControladorCalculadora\calcular\sumar\
+\ControladorCalculadora\calcular\restar\
+\ControladorCalculadora\calcular\multiplicar\
+\ControladorCalculadora\calcular\dividir\
+
+a los que se le agrgan dos path variables con numeros para hacer las operaciones. Ejemplo:
+\ControladorCalculadora\calcular\sumar\3\6
+
+En el caso de dividir por 0 se redirigirá a una pagina de error. Ejemplo
+\ControladorCalculadora\calcular\dividir\3\0
+
