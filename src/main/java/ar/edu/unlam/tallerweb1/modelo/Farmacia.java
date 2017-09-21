@@ -16,6 +16,22 @@ public class Farmacia {
 	@OneToOne
 	private Direccion direccion;
 	
+	@OneToOne
+	private Punto punto;
+	
+	public Punto getGeoLocalizacion() {
+		return punto;
+	}
+
+	public void setGeoLocalizacion(Punto punto) {
+		this.punto = punto;
+	}
+	
+	public void setGeoLocalizacion(String latitud, String longitud) {
+		this.punto.setLatitud(latitud);
+		this.punto.setLongitud(longitud);
+	}
+
 	public Farmacia(String nombre,String diaDeTurno) {
 		this.nombre=nombre;
 		this.diaDeTurno=diaDeTurno;
